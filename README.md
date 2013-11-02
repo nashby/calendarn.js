@@ -1,4 +1,4 @@
-#### Calendarn.js
+### Calendarn.js
 
 Create events in various calendars easily.
 
@@ -12,7 +12,7 @@ Create events in various calendars easily.
 npm test
 ```
 
-## Contributing
+#### Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
