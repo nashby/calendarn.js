@@ -5,9 +5,9 @@
   "authors": [
     "Vasiliy Ermolovich <younash@gmail.com>"
   ],
-  "description": "TODO",
+  "description": "Create events in various calendars easily",
   "keywords": [
-    "TODO"
+    "iCalendar", "google calendar"
   ],
   "license": "MIT",
   "homepage": "http://github.com/nashby/calendarn.js",
