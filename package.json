@@ -1,0 +1,16 @@
+{
+  "name": "calendarn.js",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.13.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script tests/*_test.coffee"
+  }
+}

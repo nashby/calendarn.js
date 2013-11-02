@@ -1,0 +1,22 @@
+{
+  "name": "calendarn.js",
+  "main": "calendarn.js",
+  "version": "0.0.1",
+  "authors": [
+    "Vasiliy Ermolovich <younash@gmail.com>"
+  ],
+  "description": "TODO",
+  "keywords": [
+    "TODO"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/nashby/calendarn.js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
