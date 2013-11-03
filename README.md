@@ -4,7 +4,34 @@ Create events in various calendars easily.
 
 #### Usage
 
-[Example](https://github.com/nashby/calendarn.js/blob/master/tests/calendarn_test.coffee)
+```coffeescript
+calendarn = new Calendarn(options)
+
+# Google Calendar
+calendarn.google()
+
+# iCalendar
+calendarn.iCalendar()
+```
+
+To create link to downloadable iCalc file you can use [Data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme)
+
+```coffeescript
+encodeURI("data:text/calendar;charset=utf8,#{calendarn.iCalendar()}")
+```
+
+and then add to `href` attribute of the link.
+
+Options:
+
+```
+startDate
+endDate
+title
+description
+location
+url (for iCalendar)
+```
 
 #### Developing
 
