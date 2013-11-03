@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/nashby/calendarn.js.png?branch=master)](https://travis-ci.org/nashby/calendarn.js)
 ### Calendarn.js
 
 Create events in various calendars easily.
