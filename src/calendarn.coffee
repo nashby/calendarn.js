@@ -28,6 +28,16 @@ do (exports) ->
         "END:VCALENDAR"
       ].join('\n')
 
+    yahoo: ->
+      params =
+        title:  @options.title
+        desc:   @options.description || ''
+        in_loc: @options.location    || ''
+        st:     @startDate.replace('Z', '')
+        et:     @endDate.replace('Z', '')
+
+      "http://calendar.yahoo.com/?v=60&view=d&type=20&#{@parametrize(params)}"
+
     formatDate: (date) ->
       date = new Date(date) unless date instanceof Date
       date.toISOString().replace(/-|:|\.\d+/g, '')

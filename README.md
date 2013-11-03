@@ -13,6 +13,9 @@ calendarn.google()
 
 # iCalendar
 calendarn.iCalendar()
+
+# Yahoo Calendar
+calendarn.yahoo()
 ```
 
 To create link to downloadable iCalc file you can use [Data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme)

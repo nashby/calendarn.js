@@ -26,6 +26,18 @@
         return ["BEGIN:VCALENDAR", "VERSION:2.0", "BEGIN:VEVENT", "URL:" + (this.options.url || ''), "DTSTART:" + this.startDate, "DTEND:" + this.endDate, "SUMMARY:" + (this.options.title || ''), "DESCRIPTION:" + this.options.description, "LOCATION:" + (this.options.location || ''), "END:VEVENT", "END:VCALENDAR"].join('\n');
       };
 
+      Calendarn.prototype.yahoo = function() {
+        var params;
+        params = {
+          title: this.options.title,
+          desc: this.options.description || '',
+          in_loc: this.options.location || '',
+          st: this.startDate.replace('Z', ''),
+          et: this.endDate.replace('Z', '')
+        };
+        return "http://calendar.yahoo.com/?v=60&view=d&type=20&" + (this.parametrize(params));
+      };
+
       Calendarn.prototype.formatDate = function(date) {
         if (!(date instanceof Date)) {
           date = new Date(date);
